@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "duazomclloyd@gmail.com",
+      "password": "$2b$10$lAWI828.8mls3mhA/tXYkOHDc7F7xwzjqg3PxmDl5wNeoZvaE73sK",
+      "id": "mO0M-7LyDPU"
+    },
+    {
+      "username": "mclloydduazo3@gmail.com",
+      "password": "$2b$10$Mc7Xu7rulb3cXSTrh35vxuRp4Xt7R48V52jVBs/mDldqyzXlwOjty",
+      "id": "nz0wTX5f4a0"
+    }
+  ],
+  "posts": [
+    {
+      "title": "🏀nba",
+      "content": "Paano ako magmo-move on eh pang Game 7 yung memories?",
+      "category": "Sports",
+      "createdAt": "5/8/2026",
+      "id": "7fG5B-KTgjA"
+    },
+    {
+      "title": "🍗adobo",
+      "content": "Mas consistent pa yung gutom ko kaysa sa replies niya",
+      "category": "Food",
+      "createdAt": "5/9/2026",
+      "id": "gK2hcBeiCSE"
+    },
+    {
+      "title": "📝good student",
+      "content": "Pumasok ng motivated, umuwing shet!",
+      "category": "School",
+      "createdAt": "5/8/2026",
+      "id": "Uf_3YhLkPuU"
+    },
+    {
+      "title": "🎬The Conjuring",
+      "content": "“Abi kog love story, horror man diay.”",
+      "category": "Movies",
+      "createdAt": "5/8/2026",
+      "id": "HYuZLSfDc8U"
+    },
+    {
+      "title": "FINAL PROJECT",
+      "content": "SIMPLE BLOG.",
+      "category": "School",
+      "createdAt": "5/9/2026",
+      "id": "WiKpkobA_vk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

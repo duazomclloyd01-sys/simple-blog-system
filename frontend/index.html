@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simple Blog</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+   <div class="header">
+
+  <div>
+    <h1>Simple Blog</h1>
+    <p>Duazo's Blog Management System</p>
+  </div>
+
+  <button onclick="logout()" class="logout-btn">
+    Sign Out
+  </button>
+
+</div>
+
+    <!-- CREATE POST -->
+    <div class="create-post">
+
+      <div class="form-group">
+
+        <!-- CATEGORY -->
+        <select id="category">
+          <option value="">Select Category</option>
+          <option value="School">School</option>
+          <option value="Food">Food</option>
+          <option value="Movies">Movies</option>
+          <option value="Sports">Sports</option>
+        </select>
+
+        <!-- TITLE -->
+        <input id="title" placeholder="Title">
+
+        <!-- CONTENT -->
+        <input id="content" placeholder="Content">
+
+        <!-- ADD BUTTON -->
+        <button onclick="addPost()">
+          Add Post
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- POSTS SECTION -->
+    <div class="posts-section">
+
+      <div class="posts-header">
+
+        <h2>All Posts</h2>
+
+        <!-- SEARCH BAR -->
+        <input
+          type="text"
+          id="search"
+          placeholder="Search posts..."
+        >
+
+      </div>
+
+      <!-- POSTS -->
+      <div id="posts"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

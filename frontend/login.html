@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .login-page {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+
+      background:
+        radial-gradient(circle at top left,#2563eb22,transparent 30%),
+        radial-gradient(circle at bottom right,#06b6d422,transparent 30%),
+        linear-gradient(135deg,#0f172a,#111827);
+
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      width: 350px;
+      padding: 35px;
+
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+
+      border-radius: 20px;
+
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+
+      text-align: center;
+      color: white;
+    }
+
+    .login-card h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+
+      background: linear-gradient(45deg,#00c6ff,#0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .login-card p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+
+      border: none;
+      border-radius: 12px;
+
+      background: rgba(255,255,255,0.08);
+
+      color: white;
+      font-size: 15px;
+
+      outline: none;
+    }
+
+    .login-card input::placeholder {
+      color: #cbd5e1;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 15px;
+
+      border: none;
+      border-radius: 12px;
+
+      background: linear-gradient(45deg,#00c6ff,#0072ff);
+
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px #00c6ff;
+    }
+
+    .show-password {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 14px;
+      color: #cbd5e1;
+
+      margin-top: 10px;
+    }
+
+    .signup-text {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup-text a {
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="login-page">
+
+  <div class="login-card">
+
+    <h2>Login</h2>
+
+    <p>Welcome back to your blog system</p>
+
+    <input id="username" placeholder="Username">
+
+    <input id="password" type="password" placeholder="Password">
+
+    <label class="show-password">
+  <input type="checkbox" onclick="togglePassword()">
+  <span>Show Password</span>
+  </label>
+    <button class="login-btn" onclick="login()">
+      Login
+    </button>
+
+    <p class="signup-text">
+      Don't have an account?
+      <a href="register.html">Sign Up</a>
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

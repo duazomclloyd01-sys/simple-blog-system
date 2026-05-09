@@ -1,0 +1,24 @@
+{
+  "name": "simple_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "json": "json-server --watch db.json --port 3001",
+    "dev": "concurrently \"npm run start\" \"npm run json\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.15.2",
+    "bcrypt": "^6.0.0",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.15",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
